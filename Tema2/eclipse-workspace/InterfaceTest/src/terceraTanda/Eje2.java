@@ -89,7 +89,7 @@ public class Eje2 extends JFrame {
 	public ItemListener controlBoxes() {
 		ItemListener esteMetodo = new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {	
-				String msj="Opción seleccionada: ";
+				String msj="Opciones seleccionadas: ";
 				JCheckBox ch = (JCheckBox) e.getItem();		
 				
 				switch (ch.getText()) {
@@ -99,6 +99,7 @@ public class Eje2 extends JFrame {
 					 	jboxsize.setEnabled(true);
 					 	jboxdebug.setEnabled(true);
 			        }else {
+			        	lblchange.setText("Cambiar selección: ");
 			        	jboxvelocity.setEnabled(false);
 					 	jboxsize.setEnabled(false);
 					 	jboxdebug.setEnabled(false);
@@ -115,7 +116,17 @@ public class Eje2 extends JFrame {
 
 				for (int i = 0; i < jboxes.size(); i++) {
 					if(jboxes.get(i).isSelected()){
-						msj+=jboxes.get(i).getText()+" ";
+						switch (jboxes.get(i).getText()) {
+						case "Mayor velocidad":
+							msj+="Velocidad"+" ";
+							break;
+						case "Menor tamaño":
+							msj+="Tamaño"+" ";
+							break;
+						case "Debug":
+							msj+="Debug"+" ";
+							break;
+						}
 					}
 				}
 				lblselected.setText(msj);
