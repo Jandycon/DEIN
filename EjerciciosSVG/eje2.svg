@@ -1,9 +1,0 @@
-<svg width="300px" height="400px" viewBox="0 0 300 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        
-  <line x1="143" y1="174" x2="90" y2="123" stroke="#aaa" fill="green">
-  </line>
-  <circle fill="green" stroke="#aaa" cx="142" cy="97" r="20">
-  </circle>
-  <circle fill="green" stroke="#aaa" cx="151" cy="249" r="13">
-  </circle>
-</svg>

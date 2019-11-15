@@ -8,6 +8,7 @@ public class Producto {
 	private String seccion;
 	private String estanteria;
 	private int disponible;
+	
 	public Producto(int id, String producto, float precio, String seccion, String estanteria, int disponible) {
 		super();
 		this.id = id;
@@ -17,6 +18,15 @@ public class Producto {
 		this.estanteria = estanteria;
 		this.disponible = disponible;
 	}
+	
+	public Producto(String producto) {
+		this.producto=producto;
+	}
+	
+	public Producto(int id) {
+		this.id=id;
+	}
+	
 	public int getId() {
 		return id;
 	}
